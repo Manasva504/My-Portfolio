@@ -6,14 +6,14 @@
     <meta name="theme-color" content="#021024" />
     <meta
       name="description"
-      content="Portfolio of Manasva Dhaka, a B.Tech IT undergraduate building full-stack MERN and AI-powered projects."
+      content="Portfolio of Manasva Dhaka, a B.Tech IT undergraduate building full-stack MERN and AI-powered projects, plus backend and distributed systems in Java."
     />
 
     <!-- TODO: replace og:image with a real screenshot of the site (must stay an absolute URL) -->
     <meta property="og:title" content="Manasva's Portfolio" />
     <meta
       property="og:description"
-      content="Portfolio of Manasva Dhaka, a B.Tech IT undergraduate building full-stack MERN and AI-powered projects."
+      content="Portfolio of Manasva Dhaka, a B.Tech IT undergraduate building full-stack MERN and AI-powered projects, plus backend and distributed systems in Java."
     />
     <meta
       property="og:image"
@@ -88,8 +88,12 @@
             </div>
 
             <div class="socials">
-              <!-- TODO: add your real LinkedIn profile URL -->
-              <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+              <a
+                href="https://www.linkedin.com/in/manasva-dhaka"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn profile"
+              >
                 <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
               </a>
 
@@ -104,11 +108,6 @@
 
               <a href="mailto:manasva541@gmail.com" aria-label="Send email">
                 <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-              </a>
-
-              <!-- TODO: add your real LeetCode profile URL (Font Awesome has no LeetCode brand icon, so this uses a generic code icon) -->
-              <a href="#" target="_blank" rel="noopener" aria-label="LeetCode profile">
-                <i class="fa-solid fa-code" aria-hidden="true"></i>
               </a>
             </div>
           </div>
@@ -168,7 +167,7 @@
         <section id="skills" class="skills-section reveal">
           <h2 class="section-title">SKILLS</h2>
 
-          <!-- These four groups mirror the SKILLS section of resume.pdf exactly.
+          <!-- These five groups mirror the SKILLS section of resume.pdf exactly.
                Keep them in sync: whenever the resume changes, update this list
                (and vice versa). -->
           <div class="skills-group">
@@ -252,6 +251,31 @@
           </div>
 
           <div class="skills-group">
+            <span class="skills-group-label">Core CS</span>
+            <div class="skills-container">
+              <div class="skill-card">
+                <i class="fa-solid fa-diagram-project skill-icon" aria-hidden="true"></i>
+                <p>DSA</p>
+              </div>
+
+              <div class="skill-card">
+                <i class="fa-solid fa-cubes skill-icon" aria-hidden="true"></i>
+                <p>OOP</p>
+              </div>
+
+              <div class="skill-card">
+                <i class="fa-solid fa-database skill-icon" aria-hidden="true"></i>
+                <p>DBMS</p>
+              </div>
+
+              <div class="skill-card">
+                <i class="fa-solid fa-microchip skill-icon" aria-hidden="true"></i>
+                <p>Operating Systems</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-group">
             <span class="skills-group-label">Tools &amp; Testing</span>
             <div class="skills-container">
               <div class="skill-card">
@@ -276,6 +300,45 @@
           <h2 class="section-title">PROJECTS</h2>
 
           <div class="projects-container">
+            <div class="project-card">
+              <h3>
+                Distributed File Storage System
+                <span class="status-tag">In Progress</span>
+              </h3>
+              <p>
+                A GFS/HDFS-inspired file storage system in plain Java. Files are
+                streamed into 1 MiB chunks, spread round-robin across storage
+                nodes, and rebuilt byte-for-byte, with SHA-256 checks to catch
+                corruption and failover to the next node on I/O errors. Backed
+                by 129 tests and 5 stress tests (64 MiB processed under a 16 MiB
+                heap). Next up: an HTTP API, replication and networked nodes.
+              </p>
+              <!-- TODO: once you have a real number, add it back:
+                   <p class="project-impact">
+                     <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                     Impact: stores N GB across M nodes with zero corrupted reads
+                   </p> -->
+              <div class="tech-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">SHA-256</span>
+                <span class="tech-tag">Streaming I/O</span>
+              </div>
+              <div class="project-links">
+                <span class="link-pending">
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                  Demo coming soon
+                </span>
+                <a
+                  href="https://github.com/Manasva504/DistributedFS"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                  GitHub
+                </a>
+              </div>
+            </div>
+
             <div class="project-card">
               <h3>Student Management System</h3>
               <p>
@@ -359,8 +422,6 @@
                 </a>
               </div>
             </div>
-
-           
 
             <div class="project-card">
               <h3>React Todo App</h3>
@@ -459,8 +520,12 @@
               Bengaluru.
             </a>
             <br />
-            <!-- TODO: add your real LinkedIn profile URL -->
-            <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+            <a
+              href="https://www.linkedin.com/in/manasva-dhaka"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn profile"
+            >
               <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
               linkedin
             </a>

@@ -383,6 +383,10 @@ nav a:hover {
   display: inline-block;
 }
 
+.socials a:last-child {
+  margin-right: 0;
+}
+
 .socials a:hover {
   color: var(--color-primary);
   transform: translateY(-3px);
@@ -579,6 +583,17 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
+.project-card .status-tag {
+  display: inline-block;
+  vertical-align: middle;
+  background: var(--color-bg-alt);
+  color: var(--color-primary);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
 .project-card p {
   font-size: 14px;
   color: var(--color-text-muted);
@@ -622,6 +637,7 @@ nav a:hover {
 
 .project-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
   margin-top: 10px;
 }
@@ -651,6 +667,7 @@ nav a:hover {
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  white-space: nowrap;
   cursor: not-allowed;
   opacity: 0.6;
 }
