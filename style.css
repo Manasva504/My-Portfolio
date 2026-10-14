@@ -428,6 +428,28 @@ nav a:hover {
   font-size: 1rem;
 }
 
+.about-text .current-focus {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text);
+  background: var(--color-bg-alt);
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.current-focus i {
+  color: var(--color-primary);
+  margin-top: 2px;
+}
+
+.current-focus a {
+  color: var(--color-primary);
+}
+
 /* ---------- Contact info block ---------- */
 
 .contactme {
